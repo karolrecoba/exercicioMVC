@@ -30,6 +30,10 @@ class Controller {
                 break;
             case 'karolzinha':
                 $this->showKarolzinha();
+		break;
+            case 'alicinha':
+		$this->showAlicinha();
+		break;
         }
     }
     
@@ -52,6 +56,9 @@ class Controller {
     
     private function showKarolzinha(){
         include 'view/karolzinha.php';
+    }
+    private function showAlicinha(){
+	include 'view/alicinha.php';
     }
 }
 
