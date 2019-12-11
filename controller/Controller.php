@@ -22,12 +22,19 @@ class Controller {
             case 'login':
                 $this->showTelaLoginView();
                 break;
+            case 'lindao':
+                $this->showOMaisBelo();
+                break;
             case 'logout':
                 $this->showTelaDeLogoutView();
                 break;
         }
     }
     
+    private function showOMaisBelo(){
+        include 'view/calebeView.php';
+    }
+
     private function showConteudoInicialView(){
         include 'view/conteudoInicialView.php';
     }
